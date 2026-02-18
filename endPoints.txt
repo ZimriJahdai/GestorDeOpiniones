@@ -1,1 +1,29 @@
-crear 
+crear una publicacion (posts)
+ colocar el token generado por .net en autorization
+http://localhost:3006/api/v1/posts
+
+{
+  "title": "La educación en Guatemala",
+  "category": "Educación",
+  "content": "Creo que el sistema educativo necesita más inversión."
+}
+
+Actualizar una publicacion
+
+PUT: http://localhost:3006/api/v1/posts/id - mongoose
+
+
+eliminar publicacion 
+
+DELETE: http://localhost:3006/api/v1/posts/id - mongoose
+
+
+responder a un comentario: 
+
+Post: http://localhost:3006/api/v1/comments
+
+{
+  "content": "Estoy completamente de acuerdo con tu opinión.",
+  "authorId": "usr_qCBKGeKKNkTr",
+  "postId": "69963b058bcf3accb654a3c9"
+}
