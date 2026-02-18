@@ -1,17 +1,25 @@
 import mongoose from "mongoose";
 
-const PostSchema = new mongoose.Schema(
+const postSchema = new mongoose.Schema(
   {
-    title: String,
-    category: String,
-    content: String,
-
-    user: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+    title: {
+      type: String,
+      required: true,
+    },
+    category: {
+      type: String,
+      required: true,
+    },
+    content: {
+      type: String,
+      required: true,
+    },
+    authorId: {
+      type: String, // viene del token (.NET)
+      required: true,
     },
   },
   { timestamps: true }
 );
 
-export default mongoose.model("Post", PostSchema);
+export default mongoose.model("Post", postSchema);

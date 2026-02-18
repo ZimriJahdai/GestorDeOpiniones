@@ -8,7 +8,7 @@ import morgan from "morgan";
 import { corsOptions } from "./cors-configuration.js";
 import { helmetConfiguration } from "./helmet-configuration.js";
 
-import userRoutes from "../src/users/user.routes.js";
+
 import postRoutes from "../src/posts/post.routes.js";
 import commentRoutes from "../src/comments/comment.routes.js";
 
@@ -29,7 +29,6 @@ app.get("/health", (_req, res) => {
 });
 
 // Rutas
-app.use("/api/v1/auth", userRoutes);
 app.use("/api/v1/posts", postRoutes);
 app.use("/api/v1/comments", commentRoutes);
 

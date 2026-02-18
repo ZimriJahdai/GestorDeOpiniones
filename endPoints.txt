@@ -1,14 +1,1 @@
-registrarse:
-
-post:
-
-http://localhost:3006/api/v1/auth/register
-
-{
-  "name": "Zimri López",
-  "email": "zlopez@kinal.edu.gt",
-  "password": "12345678"
-}
-
-
-login obtener token
+crear 
