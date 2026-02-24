@@ -1,6 +1,7 @@
-crear una publicacion (posts):
+colocar el token generado del otro proyecto al momento del 
+login exitoso ponerlo en autorization antes de crear una publicacion y comentarios
 
- colocar el token generado por .net en autorization
+ crear una publicacion (posts):
 
 http://localhost:3006/api/v1/posts
 
